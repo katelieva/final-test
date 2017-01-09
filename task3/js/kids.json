@@ -1,44 +1,43 @@
-[
-  {
+[{
     "name": "Дейвид",
     "age": "4",
     "color": "зелен",
     "game": "LEGO",
-    "food": "сладолед"
-  },
-  {
+    "food": "сладолед",
+    "url": "img/david.png"
+}, {
     "name": "Сюзан",
     "age": "4",
     "color": "син",
     "game": "кукла Барби",
-    "food": "крем карамел"
-  },
-  {
+    "food": "крем карамел",
+    "url": "img/susan.png"
+}, {
     "name": "Брайън",
     "age": "6",
     "color": "лилаво",
     "game": "футбол",
-    "food": "хот дог"
-  },
-  {
+    "food": "хот дог",
+    "url": "img/brian.png"
+}, {
     "name": "Ашли",
     "age": "3",
     "color": "розово",
     "game": "кукли",
-    "food": "пуканки"
-  },
-  {
+    "food": "пуканки",
+    "url": "img/ashley.png"
+}, {
     "name": "Ема",
     "age": "5",
     "color": "оранжево",
     "game": "криеница",
-    "food": "торта"
-  },
-  {
+    "food": "торта",
+    "url": "img/ema.png"
+}, {
     "name": "Том",
     "age": "5",
     "color": "червено",
     "game": "фризби",
-    "food": "ябълки"
-  }
-]
+    "food": "ябълки",
+    "url": "img/tom.png"
+}]

@@ -1,41 +1,82 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: sans-serif;
-  line-height: 1.6em;
+    font-family: sans-serif;
+    line-height: 1.6em;
 }
 
 .subtask {
-  margin: 20px 0;
-  border: 1px solid lightblue;
-  border-radius: 8px;
-  padding: 16px;
+    margin: 20px 0;
+    border: 1px solid lightblue;
+    border-radius: 8px;
+    padding: 16px;
 }
 
 ul {
-  padding: 0;
-  margin: 0;
-  font-family: sans-serif;
-  color: white;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
 }
 
 ul > li {
-  list-style-type: none;
-  padding: 20px;
-  float: left;
-  background-color: lightpink;
-  width: calc(100%/6);
+    list-style-type: none;
+    padding: 20px;
+    float: left;
+    background-color: lightpink;
+    width: calc(100%/6);
 }
 
 ul > li img {
-  margin: 0 auto;
-  display: block;
+    margin: 0 auto;
+    display: block;
 }
 
 .clearfix {
-  clear: both;
+    clear: both;
 }
 
+
 /* Вашият CSS от тук надолу */
+
+@media all and (max-width: 1000px) {
+    ul > li {
+        width: calc(100%/3);
+    }
+}
+
+@media all and (max-width: 600px) {
+    ul > li {
+        width: calc(100%/2);
+    }
+}
+
+@media all and (max-width: 400px) {
+    ul > li {
+        width: calc(100%/1);
+    }
+}
+
+ul > li:nth-child(even) {
+    background-color: lightblue;
+}
+
+ul>li:hover {
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+ul li img:hover {
+    -webkit-transform: rotate(180deg);
+    -webkit-transition: 1s ease-in-out;
+}
+
+ul li img::after {
+    content: '';
+    position: absolute;
+    box-shadow: 10px 10px 50px 20px black inset;
+    /
+}
